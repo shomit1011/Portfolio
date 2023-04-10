@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alkatra', sans-serif;
+}
+
+/* Navbar */
+.main-navbar{
+    background-color: #181824;
+}
+.name{
+    color: #7562E0;
+    margin: 0;
+    font-size: 28px;
+}
+.r-nav-txt{
+    margin: 0;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+.nav{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+/* Main Content */
+.main-container{
+    background-color: #1A1A29;
+    /* background-color: #17172e; */
+}
+.new-container{
+    width: 1100px;
+    margin: auto;
+}
+.cta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 65vh; */
+    padding: 150px 0;
+}
+.cta-left{
+    color: white;
+    width: 500px;
+}
+.p1{
+    font-size: 32px;
+    margin: 0;
+}
+.p2{
+    font-size: 52px;
+    margin: 0;
+}
+.p3{
+    font-size: 18px;
+    margin: 0 0 25px 0;
+}
+.cta-btn{
+    display: flex;
+}
+.abt{
+    background-color: #7562E0;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.abt i{
+    width: 16px;
+    color: white;
+    padding: 0 7px;
+}
+.abme-btn{
+    background-color: transparent;
+    border: none;
+    font-family: Alkatra;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+.prj{
+    background-color: transparent;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #7562E0;
+    border-radius: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.prj:hover{
+    background-color: #7562E0;
+}
+.prj i{
+    width: 18px;
+    color: white;
+    padding: 0 7px;
+}
+.prj-btn{
+    background-color: transparent;
+    border: none;
+    font-family: Alkatra;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+.bg-img{
+    background-color: #7562E0;
+    clip-path: circle(45% at 50% 58%);
+    margin: auto;
+    display: flex;
+}
+
+/* About Me */
+.about{
+    color: white;
+}
+.abt-head{
+    color: #7562E0;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+.abt-p{
+    margin-top: 0;
+    font-size: 19px;
+}
+.abt-exp{
+    display: flex;
+    align-items: center;
+}
+.exp{
+    color: #7562E0;
+    font-size: 56px;
+    font-weight: bold;
+    margin: 0;
+}
+.exp-txt{
+    font-size: 24px;
+    padding-left: 30px;
+}
+
+/* Education */
+.education{
+    color: white;
+}
+.edu-head{
+    color: #7562E0;
+    font-size: 32px;
+}
