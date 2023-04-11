@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shomit Bhattacharya</title>
+    <link rel="shortcut icon" href="./assets/public/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alkatra">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,16 +19,19 @@
                 <p class="name">Shomit Bhattacharya</p>
             </div>
             <div class="r-nav">
-                <a href="" class="r-nav-txt">Home</a>
-                <a href="" class="r-nav-txt">About Me</a>
-                <a href="" class="r-nav-txt">Projects</a>
-                <a href="" class="r-nav-txt">Contact</a>
+                <a href="#" class="r-nav-txt">Home</a>
+                <a href="#projects" class="r-nav-txt">Projects</a>
+                <a href="#experience" class="r-nav-txt">Experience</a>
+                <a href="#contacts" class="r-nav-txt">Contact</a>
             </div>
         </div>
     </div>
 
     <!-- Main Content -->
     <div class="main-container">
+        <div class="arrow">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
         <div class="new-container">
             <!-- CTA -->
             <div class="cta">
@@ -37,11 +41,11 @@
                     <p class="p3">Freelance UI designer, Fullstack developer, & Data Miner. I create seamless web experiences for end-users.</p>
                     <div class="cta-btn">
                         <div class="abt">
-                            <button class="abme-btn">About Me</button>
+                            <a href="#abouts"><button class="abme-btn">About Me</button></a>
                             <i class="fa-solid fa-user"></i>
                         </div>
                         <div class="prj">
-                            <button class="prj-btn">Projects</button>
+                            <a href="#techs"><button class="prj-btn">Tech Stacks</button></a>
                             <i class="fa-solid fa-folder-open"></i>
                         </div>
                     </div>
@@ -54,7 +58,7 @@
             </div>
 
             <!-- About me -->
-            <div class="about">
+            <div class="about" id="abouts">
                 <div class="about-head">
                     <p class="abt-head">About Me :</p>
                 </div>
@@ -74,19 +78,21 @@
                     <p class="edu-head">Educational Skills :</p>
                 </div>
                 <div class="education-txt">
-                    <div class="edu-txt">
+                    <div class="edu-txt" id="bg-main-div">
                         <div class="et">
                             <i class="fa-solid fa-building-columns"></i>
                         </div>
+                        <div class="white-line" id="bg-white"></div>
                         <div class="et1">
                             <p class="et-p1">B.TECH CSE</p>
                             <p class="et-p1">Kalinga Institute of Industrial Technology, Bhubaneshwar</p>
                         </div>
                     </div>
-                    <div class="edu-txt">
+                    <div class="edu-txt" id="bg-main-div">
                         <div class="et">
                             <i class="fa-solid fa-school"></i>
                         </div>
+                        <div class="white-line" id="bg-white"></div>
                         <div class="et1">
                             <p class="et-p1">SCHOOLING</p>
                             <p class="et-p1">Delhi Public School, Raipur</p>
@@ -98,6 +104,7 @@
                         <div class="et">
                             <i class="fa-solid fa-user-graduate"></i>
                         </div>
+                        <div class="white-line"></div>
                         <div class="et1">
                             <p class="et-p1">CGPA - 3rd Year</p>
                             <p class="et-p1">8.95</p>
@@ -107,6 +114,7 @@
                         <div class="et">
                             <i class="fa-solid fa-user-graduate"></i>
                         </div>
+                        <div class="white-line"></div>
                         <div class="et1">
                             <p class="et-p1">CLASS X - 93.6% - 2018</p>
                             <p class="et-p1">CLASS XII - 91.2% - 2020</p>
@@ -116,7 +124,7 @@
             </div>
 
             <!-- Tech Stacks -->
-            <div class="tech-stacks">
+            <div class="tech-stacks" id="techs">
                 <div class="ts-head">
                     <p class="ts-h">Tech Stacks : </p>
                 </div>
@@ -161,7 +169,7 @@
             </div>
 
             <!-- Projects -->
-            <div class="projects-main">
+            <div class="projects-main" id="projects">
                 <div class="prj-heading">
                     <p class="phead">Projects :</p>
                 </div>
@@ -178,42 +186,42 @@
                                 Made a very interactive and exciting tic-tac-toe game using JavaScript.
                             </div>
                             <div class="p-btn">
-                                <button class="live-btn"><a href="">View Live</a></button>
-                                <button class="git-btn"><a href="">GitHub</a></button>
+                                <button class="live-btn"><a href="https://shomit1011.github.io/TicTacToe/">View Live</a></button>
+                                <button class="git-btn"><a href="https://github.com/shomit1011/TicTacToe.git">GitHub</a></button>
                             </div>
                         </div>
                     </div>
                     <div class="p-card">
                         <div class="p-img">
-                            <img src="./assets/public/ttt.png" alt="">
+                            <img src="./assets/public/arch.png" alt="">
                         </div>
                         <div class="p-info">
                             <div class="p-title">
-                                Tic Tac Toe Games
+                                Architechture Website
                             </div>
                             <div class="p-txt">
-                                Made a very interactive and exciting tic-tac-toe game using JavaScript.
+                                Made a website for an Architechture firm as per their given specifications.
                             </div>
                             <div class="p-btn">
-                                <button class="live-btn"><a href="">View Live</a></button>
-                                <button class="git-btn"><a href="">GitHub</a></button>
+                                <button class="live-btn"><a href="https://shomit1011.github.io/TW-ITW-2-PROJECT-1/">View Live</a></button>
+                                <button class="git-btn"><a href="https://github.com/shomit1011/TW-ITW-2-PROJECT-1.git">GitHub</a></button>
                             </div>
                         </div>
                     </div>
                     <div class="p-card">
                         <div class="p-img">
-                            <img src="./assets/public/ttt.png" alt="">
+                            <img src="./assets/public/starbucks.png" alt="">
                         </div>
                         <div class="p-info">
                             <div class="p-title">
-                                Tic Tac Toe Games
+                                Starbucks Clone
                             </div>
                             <div class="p-txt">
-                                Made a very interactive and exciting tic-tac-toe game using JavaScript.
+                                Made a clone of starbucks website as one of my personal projects.
                             </div>
                             <div class="p-btn">
-                                <button class="live-btn"><a href="">View Live</a></button>
-                                <button class="git-btn"><a href="">GitHub</a></button>
+                                <button class="live-btn"><a href="https://shomit1011.github.io/Starbucks-Clone/">View Live</a></button>
+                                <button class="git-btn"><a href="https://github.com/shomit1011/Starbucks-Clone.git">GitHub</a></button>
                             </div>
                         </div>
                     </div>
@@ -221,52 +229,51 @@
                 <div class="projects">
                     <div class="p-card">
                         <div class="p-img">
-                            <img src="./assets/public/ttt.png" alt="">
+                            <img src="./assets/public/CV Logo PNG.png" alt="">
                         </div>
                         <div class="p-info">
                             <div class="p-title">
-                                Tic Tac Toe Games
+                                CollegeVerse
                             </div>
                             <div class="p-txt">
-                                Made a very interactive and exciting tic-tac-toe game using JavaScript.
+                                Made a fully functional website from scratch for the client - Apni Academy.
                             </div>
                             <div class="p-btn">
-                                <button class="live-btn"><a href="">View Live</a></button>
-                                <button class="git-btn"><a href="">GitHub</a></button>
+                                <button class="git-btn"><a href="https://github.com/shomit1011/CollegeVerse.git">GitHub</a></button>
                             </div>
                         </div>
                     </div>
                     <div class="p-card">
                         <div class="p-img">
-                            <img src="./assets/public/ttt.png" alt="">
+                            <img src="./assets/public/atg.png" alt="">
                         </div>
                         <div class="p-info">
                             <div class="p-title">
-                                Tic Tac Toe Games
+                                GSAP
                             </div>
                             <div class="p-txt">
-                                Made a very interactive and exciting tic-tac-toe game using JavaScript.
+                                A unique website to test frontend animation and transition skills.
                             </div>
                             <div class="p-btn">
-                                <button class="live-btn"><a href="">View Live</a></button>
-                                <button class="git-btn"><a href="">GitHub</a></button>
+                                <button class="live-btn"><a href="https://shomit1011.github.io/ATG-Task-2/">View Live</a></button>
+                                <button class="git-btn"><a href="https://github.com/shomit1011/ATG-Task-2.git">GitHub</a></button>
                             </div>
                         </div>
                     </div>
                     <div class="p-card">
                         <div class="p-img">
-                            <img src="./assets/public/ttt.png" alt="">
+                            <img src="./assets/public/atg1.png" alt="">
                         </div>
                         <div class="p-info">
                             <div class="p-title">
-                                Tic Tac Toe Games
+                                ATG World
                             </div>
                             <div class="p-txt">
-                                Made a very interactive and exciting tic-tac-toe game using JavaScript.
+                                Made this project as an entarance project for internship in ATG.
                             </div>
                             <div class="p-btn">
-                                <button class="live-btn"><a href="">View Live</a></button>
-                                <button class="git-btn"><a href="">GitHub</a></button>
+                                <button class="live-btn"><a href="https://shomit1011.github.io/ATG-World/">View Live</a></button>
+                                <button class="git-btn"><a href="https://github.com/shomit1011/ATG-World.git">GitHub</a></button>
                             </div>
                         </div>
                     </div>
@@ -274,7 +281,7 @@
             </div>
 
             <!-- Experience -->
-            <div class="exp-main">
+            <div class="exp-main" id="experience">
                 <div class="exp-head">
                     <p class="exph">Experience :</p>
                 </div>
@@ -294,7 +301,13 @@
                       </div>
                       <div class="card">
                         <div class="info">
-                          <h3 class="title">Doccita, (Feb 2021 - Apr 2021)</h3>
+                          <h3 class="title">Wizards, (Feb 2021 - Apr 2021)</h3>
+                          <p>Server in this Chandigarh based startup as a full stack web developer intern. Served to many clients as a part of the project and got satisfied reviews from the same.</p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="info">
+                          <h3 class="title">Doccita, (Oct 2020 - Dec 2020)</h3>
                           <p>Employed as a frontend web developer and helped the startup organization to build their website from scratch. As my first institutional internship it helped me explore the domain in a very effective way.</p>
                         </div>
                       </div>
@@ -303,16 +316,16 @@
             </div>
             
             <!-- Contact -->
-            <div class="contact-main">
-                <div class="conatct">
+            <div class="contact-main" id="contacts">
+                <div class="contact">
                     <div class="c-left">
                         <p class="con-head">Connect with me :</p>
                         <p class="con-txt">To know more, kindly connect.</p>
                         <div class="icons">
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-linkedin"></i>
-                            <i class="fa-brands fa-github"></i>
+                            <a href="http://wa.me/+917694081171"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/shomit_bhattacharya/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/shomit-bhattacharya-3bb00218a/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/shomit1011"><i class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
                     <div class="c-right">
@@ -322,6 +335,13 @@
                         <input type="text" class="con-msg" placeholder="Message : ">
                         <button class="send-btn">Send</button>
                     </div>
+                </div>
+            </div>
+
+            <!-- END -->
+            <div class="end-main">
+                <div class="end">
+                    <p class="end-p">Created and Curated by - Shomit Bhattacharya</p>
                 </div>
             </div>
 
