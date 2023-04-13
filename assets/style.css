@@ -713,4 +713,7 @@ html{
     .p-btn button{
         margin-top: 15px;
     }
+    .cta-left{
+        width: 320px;
+    }
 }
