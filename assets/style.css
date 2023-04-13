@@ -117,7 +117,7 @@ body{
 }
 .bg-img{
     background-color: #7562E0;
-    clip-path: circle(45% at 50% 58%);
+    clip-path: circle(52% at 50% 60%);
     margin: auto;
     display: flex;
 }
@@ -168,7 +168,7 @@ body{
 .edu-txt{
     display: flex;
     align-items: center;
-    background-color: #BDBDBD;
+    background-color: #31313F;
     width: 350px;
     height: 80px;
     padding: 25px;
@@ -262,10 +262,10 @@ body{
     margin-top: 60px;
 }
 .projects{
-    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .p-card{
     background-color: #31313F;
@@ -273,6 +273,8 @@ body{
     padding: 30px;
     border-radius: 15px;
     transition: 0.5s;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
 .p-card:hover{
     transform: translate(0, -10px);
@@ -461,7 +463,7 @@ body{
 }
 .con-inp{
     background-color: #31313F;
-    width: 470px;
+    width: 450px;
     height: 60px;
     padding-left: 20px;
     border-radius: 5px;
@@ -472,7 +474,7 @@ body{
 }
 .con-msg{
     background-color: #31313F;
-    width: 470px;
+    width: 450px;
     height: 90px;
     padding-left: 20px;
     border-radius: 5px;
@@ -491,6 +493,11 @@ body{
     border-radius: 10px;
     cursor: pointer;
 }
+.con-form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
 .end-main{
     margin-top: 60px;
 }
@@ -507,7 +514,7 @@ body{
 }
 
 /* Arrow */
-.arrow{
+#arrow-up{
     background-color: #7562E0;
     width: 50px;
     height: 50px;
@@ -518,8 +525,192 @@ body{
     position: fixed;
     bottom: 100px;
     right: 100px;
+    visibility: hidden;
 }
 .arrow i{
     color: white;
     font-size: 24px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 1160px) {
+    .nav{
+        width: 750px;
+    }
+    .name{
+        font-size: 24px;
+    }
+    .r-nav-txt{
+        font-size: 16px;
+    }
+    .new-container{
+        width: 750px;
+    }
+    .p1{
+        font-size: 28px;
+    }
+    .p2{
+        font-size: 46px;
+    }
+    .p3{
+        font-size: 16px;
+    }
+    .bg-img img{
+        width: 300px;
+    }
+    .cta-left{
+        width: 440px;
+    }
+    .edu-txt{
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav{
+        flex-direction: column;
+    }
+    .r-nav{
+        margin: 20px 0 15px 0;
+    }
+    .nav{
+        width: 450px;
+    }
+    .new-container{
+        width: 450px;
+    }
+    .cta{
+        flex-direction: column;
+    }
+    .cta-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .p3{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .cta-btn{
+        margin: 30px 0 45px 0;
+    }
+    .exp-txt{
+        font-size: 20px;
+    }
+    .education-txt{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .edu-txt{
+        margin-top: 30px;
+        width: 350px;
+    }
+    .projects{
+        justify-content: center;
+    }
+    .card{
+        width: 350px;
+    }
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav{
+        width: 320px;
+    }
+    .r-nav-txt{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .new-container{
+        width: 320px;
+    }
+    .cta{
+        padding: 110px 0;
+    }
+    .p1{
+        font-size: 20px;
+    }
+    .p2{
+        font-size: 32px;
+    }
+    .p3{
+        font-size: 14px;
+    }
+    .abt-head{
+        font-size: 28px;
+    }
+    .abt-p{
+        font-size: 16px;
+    }
+    .exp{
+        font-size: 48px;
+    }
+    .exp-txt{
+        font-size: 17px;
+    }
+    .edu-head{
+        font-size: 28px;
+    }
+    .edu-txt{
+        width: 250px;
+    }
+    .exph{
+        font-size: 28px;
+    }
+    .timeline{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 250px;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .title p{
+        font-size: 14px;
+    }
+    .con-inp{
+        width: 250px;
+    }
+    .con-msg{
+        width: 250px;
+    }
+    .c-ano{
+        font-size: 20px;
+    }
+    .p-card{
+        width: 200px;
+        padding: 30px 15px;
+    }
+    .p-img{
+        width: 180px;
+    }
+    .p-info{
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .p-title{
+        font-size: 18px;
+    }
+    .p-txt{
+        font-size: 16px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .p-btn{
+        flex-direction: column;
+    }
+    .p-btn button{
+        margin-top: 15px;
+    }
 }
