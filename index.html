@@ -284,6 +284,12 @@
                 </div>
                 <div class="timeline">
                     <div class="outer">
+                        <div class="card">
+                            <div class="info">
+                              <h3 class="title">High Radius Corporation, (May 2023 - Jun 2023)</h3>
+                              <p>Completed a one month training internship at High Radius Corporation as a consultant. Attendend multiple training sessions and worked on several case studies. </p>
+                            </div>
+                        </div>
                       <div class="card">
                         <div class="info">
                           <h3 class="title">Apni Academy, (Apr 2022 - Sept 2022)</h3>
@@ -325,13 +331,29 @@
                             <a href="https://github.com/shomit1011"><i class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
-                    <div class="c-right">
+                    <!-- <div class="c-right">
                         <p class="c-ano">Contact me, lets make magic together</p>
                         <form action="mailto:shomitbhattacharya042@gmail.com" class="con-form">
                             <input type="text" class="con-inp" placeholder="Name : ">
                             <input type="text" class="con-inp" placeholder="Email : ">
                             <input type="text" class="con-msg" placeholder="Message : ">
                             <button type="submit" value="submit" class="send-btn">Send</button>
+                        </form>
+                    </div> -->
+                    <div class="c-right">
+                        <p class="c-ano">Contact me, lets make magic together</p>
+                        <form id="contactForm" class="con-form">
+                            <!-- <label for="name">Name:</label> -->
+                            <input type="text" id="name" name="name" required class="con-inp" placeholder="Name : ">
+
+                            <!-- <label for="email">Email:</label> -->
+                            <input type="email" id="email" name="email" required class="con-inp" placeholder="Email : ">
+
+                            <!-- <label for="message">Message:</label> -->
+                            <input id="message" name="message" required class="con-msg" placeholder="Message : ">
+
+                            <button type="submit" value="submit" class="send-btn">Send</button>
+
                         </form>
                     </div>
                 </div>
@@ -343,11 +365,31 @@
                     <p class="end-p">Created and Curated by - Shomit Bhattacharya</p>
                 </div>
             </div>
-
-
         </div>
     </div>
 
     <script src="./assets/script.js"></script>
+    <script>
+        const contactForm = document.getElementById("contactForm");
+
+        contactForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            const subject = encodeURIComponent(`Contact Me - ${name}`);
+            const body = encodeURIComponent(message);
+            const mailtoLink = `mailto:shomitbhattacharya042@gmail.com?subject=${subject}&body=${body}`;
+
+            // Open the user's email client to compose the email
+            window.location.href = mailtoLink;
+
+            // Optionally, you can add a confirmation message here
+            alert("Your email client should open now. Please press 'Send' to submit the message.");
+        });
+    </script>
+
 </body>
 </html>
